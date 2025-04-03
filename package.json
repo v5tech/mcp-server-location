@@ -1,0 +1,43 @@
+{
+    "name": "@v8tech/mcp-server-location",
+    "version": "1.0.0",
+    "description": "MCP server for accessing the Location through API",
+    "license": "MIT",
+    "author": "v5tech",
+    "type": "module",
+    "bin": {
+      "mcp-server-location": "dist/index.js"
+    },
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "build": "tsc && shx chmod +x dist/*.js",
+      "prepare": "npm run build",
+      "watch": "tsc --watch"
+    },
+    "dependencies": {
+      "@modelcontextprotocol/sdk": "1.0.1",
+      "@types/node-fetch": "^2.6.12",
+      "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+      "shx": "^0.3.4",
+      "typescript": "^5.6.2"
+    },
+    "keywords": [
+      "location",
+      "mcp"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/v5tech/mcp-server-location.git"
+    },
+    "bugs": {
+      "url": "https://github.com/v5tech/mcp-server-location/issues"
+    },
+    "homepage": "https://github.com/v5tech/mcp-server-location#readme",
+    "publishConfig": {
+      "access": "public"
+    }
+  }
